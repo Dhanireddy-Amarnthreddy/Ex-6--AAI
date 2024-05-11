@@ -1,14 +1,11 @@
-<H3>NAME: D.Amarnath Reddy</H3>
-<H3>REGISTER NO: 21222120012</H3>
+<H5>ENTER YOUR NAME : D. Amarnath Reddy</H5>
+<H5>ENTER YOUR REGISTER NO.: 212221240012</H5>
 <H3>EX. NO.6</H3>
 <H3>DATE:</H3>
 <H1 ALIGN =CENTER>Implementation of Semantic ANalysis</H1>
-
-## Aim: 
-	To perform Parts of speech identification and Synonym using Natural Language Processing (NLP) techniques. </H3> 
+<H3>Aim: to perform Parts of speech identification and Synonym using Natural Language Processing (NLP) techniques. </H3> 
  <BR>
- 
-## Algorithm:
+<h3>Algorithm:</h3>
 Step 1: Import the nltk library.<br>
 Step 2: Download the 'punkt', 'wordnet', and 'averaged_perceptron_tagger' resources.<br>
 Step 3:Accept user input for the text.<br>
@@ -19,12 +16,10 @@ Step 5:Iterate through each word in the tokenized text.<br>
 •	For each verb , iterate through its synsets (sets of synonyms) using wordnet.synsets(word).<br>
 •	Extract synonyms and antonyms using lemma.name() and lemma.antonyms()[0].name() respectively.<br>
 •	Print the unique sets of synonyms and antonyms.
+<H3>Program:</H3>
 
-## Program:
-```
-!pip install nltk
+```python
 import nltk
-#import wordnet
 nltk.download( 'punkt' )
 nltk.download('wordnet')
 from nltk.tokenize import word_tokenize
@@ -37,7 +32,7 @@ pos_tags= nltk.pos_tag(words)
 # Print the parts of speech
 for word, tag in pos_tags:
 	print(word, tag)
- from nltk.corpus import wordnet
+from nltk.corpus import wordnet
 
 # Identify synonyms and antonyms for each word
 synonyms =[]
@@ -53,19 +48,10 @@ print ( "Synonyms : " ,set (synonyms) )
 print ( "Antonyms : " ,set(antonyms) )
 
 ```
+<H3>Output</H3>
 
-## Output
-i.) Sample Input
-
-![image](https://github.com/shoaib3136/Ex-6--AAI/assets/117919362/be801971-3ade-448b-9c7f-1241698c8d65)
-
-ii.) Sample Output
-	
-![image](https://github.com/shoaib3136/Ex-6--AAI/assets/117919362/f0c48bc8-6d2a-4614-949e-6c7e242b424f)
-
-![image](https://github.com/shoaib3136/Ex-6--AAI/assets/117919362/096f3abf-59db-418d-ba13-f52af2f25471)
+![image](https://github.com/Pavan-Gv/Ex-6--AAI/assets/94827772/3f0a22e0-1212-4937-8ada-9c9c4aab2ba0)
 
 
-
-## Result:
+<H3>Result:</H3>
 Thus ,the program to perform the Parts of Speech identification and Synonymis executed sucessfully.
